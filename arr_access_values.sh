@@ -8,7 +8,7 @@ Moives=("court" "Pushpa2" "Bimbisara" "salar")
 
 echo "First movie ${Movies[0]}"
 echo "THird Move ${Movies[2]}"
-echo "Acces all Mobvues ${Movies[@]}"
+echo "Acces all Mobvues: ${Movies[@]}"
 
 Time_stamp=$(date)
 echo "scipt excuted at $Time_stamp"
