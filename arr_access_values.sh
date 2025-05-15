@@ -10,5 +10,5 @@ echo "First movie ${Movies[0]}"
 echo "THird Move ${Movies[2]}"
 echo "Acces all Mobvues ${Movies[@]}"
 
-Time_stamp = $(date)
+Time_stamp=$(date)
 echo "scipt excuted at $Time_stamp"
