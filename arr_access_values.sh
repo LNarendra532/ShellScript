@@ -7,7 +7,7 @@ Moives=("court" "Pushpa2" "Bimbisara" "salar")
 #Above one array we can using index values Movies(0,1,2,3,4,...)
 
 echo "First movie: ${Movies[0]}"
-echo "THird Movie :${Movies[2]}"
+echo "All movies: ${Movies[@]}"
 echo "Acces all Movies: ${Movies[@]}"
 
 Time_stamp=$(date)
