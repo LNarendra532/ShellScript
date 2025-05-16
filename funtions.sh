@@ -20,6 +20,7 @@ VALIDATE(){
         echo "success: $2  installing "
     else
         echo "Failure: $2 is not installing"
+    fi
 }
 
 # we are the pkg is laredy insatlled are not,
