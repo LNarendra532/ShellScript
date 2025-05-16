@@ -42,25 +42,19 @@ Test	Description
 
 ✅ Examples
 🔸 Check if a file exists:
-bash
-Copy
-Edit
+
 if [ -e "myfile.txt" ]; then
     echo "File exists."
 else
     echo "File does not exist."
 fi
 🔸 Check if a file is non-empty and readable:
-bash
-Copy
-Edit
+
 if [ -s "log.txt" ] && [ -r "log.txt" ]; then
     echo "log.txt exists, is readable, and not empty."
 fi
 🔸 Check if a directory exists:
-bash
-Copy
-Edit
+
 if [ -d "/etc" ]; then
     echo "/etc is a directory."
 fi
