@@ -18,10 +18,10 @@ PID of the last command running in background: $!
 
 ## conditional operators
 -----
-1.gt --> greater than
-2.lt --> less than
-3.eq --> equal
-4.ne --> not equal
+1. gt --> greater than  
+2. lt --> less than
+3. eq --> equal
+4. ne --> not equal
 
 ***
 
