@@ -8,3 +8,4 @@ then
     echo "Not a root User"
 else
     echo "your running with $USER"
+fi
