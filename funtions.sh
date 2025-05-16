@@ -17,7 +17,7 @@
 VALIDATE(){
     if [ $1 -eq 0 ]        
     then
-        echo "success: $2  installing "
+        echo "Success: $2  installing "
     else
         echo "Failure: $2 is not installing"
     fi
@@ -43,6 +43,16 @@ then
     VALIDATE $? "Mysql"
 else  
     echo "MYsql has been insatlled already"
+fi
+
+dnf list installed nginx
+if [ $? -ne 0 ]
+then
+    echo "Nginx not installed .. going to insatall"
+    sudo dnf insatll nginx -y
+    VALIDATE $? "NGINX"
+else
+    echo "NGINX alreay insatlled :: "
 fi
 
 
