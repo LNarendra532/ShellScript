@@ -18,14 +18,14 @@ $1
 
 ## conditional operators
 -----
+```
 1. gt --> greater than  
-    -gt --> not grater than
+a. -gt --> not grater than
 2. lt --> less than
-    -lt -- not less than
+a. -lt -- not less than
 3. eq --> equal
 4. ne --> not equal
-
-
+'''
 ***
 
 Conditions
