@@ -11,3 +11,15 @@ echo "Acces all Movies:count ${#Moives[@]}"
 
 Time_stamp=$(date)
 echo "scipt excuted at $Time_stamp"
+
+
+# output
+# ------
+# ```
+#  ec2-user@ip-172-31-86-244 ~/ShellScript ]$ sh arr_access_values.sh
+# First movie: court
+# All movies: court Pushpa2 Bimbisara salar
+# Third Index
+# Acces all Movies:count 4
+# scipt excuted at Fri May 16 06:30:50 UTC 2025
+# ```
