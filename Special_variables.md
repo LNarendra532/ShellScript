@@ -16,14 +16,15 @@ sleep 10 &
 PID of the last command running in background: $!
 </br>
 
-conditional operators
-“*”
+##conditional operators
+'''
 <br>
 -gt --> greater than
 -lt --> less than
 -eq --> equal
 -ne --> not equal
 </br>
+'''
 
 Conditions
 ---------------
@@ -97,6 +98,6 @@ repeated code you can keep it in function and call whenever you require
 
 mysql nginx python3
 
-you can provide args to function just like you do to the script
+###you can provide args to function just like you do to the script
 
-== sh install-command.sh mysql python3 nginx ==
+sh install-command.sh mysql python3 nginx 
