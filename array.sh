@@ -7,6 +7,6 @@ echo "All movies: ${Movies[@]}"
 echo "\n"
 echo "Total movies: ${#Movies[@]}"
 
-for movie in "${Movies[@]}"; do
+for movie in "${ Movies[@] }"; do
     echo "Movie: $movie"
 done
