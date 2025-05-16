@@ -101,6 +101,7 @@ repeated code you can keep it in function and call whenever you require
 
 mysql nginx python3
 
-###you can provide args to function just like you do to the script
-
+### you can provide args to function just like you do to the script
+```
 sh install-command.sh mysql python3 nginx 
+```
