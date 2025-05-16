@@ -73,9 +73,10 @@ denf install mysql -y
 exit status code
 ---------------
 0-127
- success --> 0 
- other than 0 --> failure
-
+```
+ 1. success --> 0 
+ 2. other than 0 --> failure
+```
 Functions
 ---------------
 a machine is functioning --> doing something
