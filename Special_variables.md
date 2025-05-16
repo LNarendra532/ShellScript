@@ -1,4 +1,4 @@
-Special variables in shell
+# Special variables in shell
 ============================
 we no need to define the variable, shell will provide to us
 $1
@@ -25,10 +25,10 @@ a. -gt --> not grater than
 a. -lt -- not less than
 3. eq --> equal
 4. ne --> not equal
-'''
+```
 ***
 
-Conditions
+# Conditions
 ---------------
 ```
 if(expression){
