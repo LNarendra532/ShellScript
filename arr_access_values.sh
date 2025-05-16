@@ -9,7 +9,7 @@ Moives=("court" "Pushpa2" "Bimbisara" "salar")
 echo "First movie: ${Moives[0]}"
 echo "All movies: ${Moives[@]}"
 echo "Third Index"
-echo "Acces all Movies:count ${Moives[#]}"
+echo "Acces all Movies:count ${#Moives[@]}"
 
 Time_stamp=$(date)
 echo "scipt excuted at $Time_stamp"
