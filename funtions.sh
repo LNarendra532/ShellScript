@@ -33,4 +33,5 @@ then
     VALIDATE $? "python3"
 else
     echo "python has been Installed alredy"
+fi
 
