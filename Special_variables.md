@@ -1,8 +1,7 @@
 # Special variables in shell
-============================
-we no need to define the variable, shell will provide to us
-$1
 
+we no need to define the variable, shell will provide to us
+```
 1. if you want all variables passed to script: $@
 2. number of variables passed: $#
 3. script name: $0
@@ -14,7 +13,7 @@ $1
                            
 9. sleep 10 &  - to run in backround
 10. PID of the last command running in background: $!
-
+```
 
 ## conditional operators
 -----
