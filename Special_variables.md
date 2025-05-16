@@ -30,7 +30,7 @@ $1
 
 Conditions
 ---------------
-
+```
 if(expression){
 	this block runs if expression is true
 }
@@ -62,13 +62,14 @@ else{
 	print number is not less than 10
 }
 
-
+```
 
 install mysql
 ---------------
 1. user is running with root access or not
 2. if root user proceed to install
 3. else show the error that please run with root access
+denf install mysql -y
 
 exit status
 ---------------
