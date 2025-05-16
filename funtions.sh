@@ -55,4 +55,50 @@ else
     echo "NGINX alreay insatlled :: "
 fi
 
+# output:
+# -------
+
+# 13.220.137.245 | 172.31.86.244 | t2.micro | https://github.com/LNarendra532/ShellScript.git
+# [ ec2-user@ip-172-31-86-244 ~/ShellScript ]$ sh funtions.sh
+# Installed Packages
+# python3.x86_64                                                      3.9.21-2.el9                                                      @rhel-9-baseos-rhui-rpms
+# python has been Installed alredy
+# Error: No matching Packages to list
+# Mysql not installed .. going to insatll
+# Error: This command has to be run with superuser privileges (under the root user on most systems).
+# Failure: Mysql is not installing
+# Installed Packages
+# nginx.x86_64                                                  2:1.20.1-22.el9_6.2                                                  @rhel-9-appstream-rhui-rpms
+# NGINX alreay insatlled ::
+
+
+# RUNwith Debig Mode
+
+
+# [ ec2-user@ip-172-31-86-244 ~/ShellScript ]$ sh -x funtions.sh
+# + dnf list installed python3
+# Installed Packages
+# python3.x86_64                                                      3.9.21-2.el9                                                      @rhel-9-baseos-rhui-rpms
+# + '[' 0 -ne 0 ']'
+# + echo 'python has been Installed alredy'
+# python has been Installed alredy
+# + dnf list installed mysql
+# Error: No matching Packages to list
+# + '[' 1 -ne 0 ']'
+# + echo 'Mysql not installed .. going to insatll'
+# Mysql not installed .. going to insatll
+# + dnf install mysql -y
+# Error: This command has to be run with superuser privileges (under the root user on most systems).
+# + VALIDATE 1 Mysql
+# + '[' 1 -eq 0 ']'
+# + echo 'Failure: Mysql is not installing'
+# Failure: Mysql is not installing
+# + dnf list installed nginx
+# Installed Packages
+# nginx.x86_64                                                  2:1.20.1-22.el9_6.2                                                  @rhel-9-appstream-rhui-rpms
+# + '[' 0 -ne 0 ']'
+# + echo 'NGINX alreay insatlled :: '
+# NGINX alreay insatlled ::
+
+
 
