@@ -9,3 +9,12 @@ then
 else
     echo "your running with "
 fi
+
+dnf install mysql -y
+
+if [ $? -eq 0 ]
+then 
+    echo "dnf is installing...SUCCESS""
+else
+    echo "dnf is not installing.. FAILURE"
+fi
