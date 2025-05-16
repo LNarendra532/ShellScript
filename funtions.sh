@@ -1,6 +1,6 @@
 #!/bin/bash
 
-userid=$(sudo id -u)
+userid=$(id -u)
 # userid=$(id -u)
 if [ $userid -ne 0 ]
 then 
@@ -34,4 +34,15 @@ then
 else
     echo "python has been Installed alredy"
 fi
+
+dnf list installed mysql
+if [ $? -ne 0 ]
+then
+    echo "Mysql not installed .. going to insatll"
+    dnf install mysql -y
+    VALIDATE $? "Mysql"
+else  
+    echo "MYsql has been insatlled already"
+fi
+
 
