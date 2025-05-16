@@ -3,25 +3,28 @@ Special variables in shell
 we no need to define the variable, shell will provide to us
 $1
 
-if you want all variables passed to script: $@
-number of variables passed: $#
-script name: $0
-present working directory: $PWD
-home directory of the user who is running the script: $HOME
-which user is running the script: $USER
-PID of the current script: $$
-To chek previous status: $? we will get in numbers 1to 127 if status fails , if success 0 will get.
+1. if you want all variables passed to script: $@
+2. number of variables passed: $#
+3. script name: $0
+4. present working directory: $PWD
+5. home directory of the user who is running the script: $HOME
+6. which user is running the script: $USER
+7. PID of the current script: $$
+8. To chek previous status: $? we will get in numbers 1to 127 if status fails , if success 0 will get.
                            
-sleep 10 &
-PID of the last command running in background: $!
+9. sleep 10 &  - to run in backround
+10. PID of the last command running in background: $!
 
 
 ## conditional operators
 -----
 1. gt --> greater than  
+    -gt --> not grater than
 2. lt --> less than
+    -lt -- not less than
 3. eq --> equal
 4. ne --> not equal
+
 
 ***
 
