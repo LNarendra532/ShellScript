@@ -12,6 +12,8 @@ echo "8 PID of last command in background: $!"
 sleep 5 &
 echo "9 wihch gives the bakground running id , ran by last commands: $!"
 
+USERID=$(id -u)
+echo "user id get  $USERID"
 # $@, $$ -PID , $# total , $USER , $$ $PWD $$ $USER $HOME 
 
 # output
