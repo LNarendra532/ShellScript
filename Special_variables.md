@@ -70,12 +70,11 @@ install mysql
 3. else show the error that please run with root access
 denf install mysql -y
 
-exit status
+exit status code
 ---------------
 0-127
-
-success --> 0
-other than 0 --> failure
+ success --> 0 
+ other than 0 --> failure
 
 Functions
 ---------------
