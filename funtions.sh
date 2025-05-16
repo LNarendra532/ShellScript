@@ -1,14 +1,14 @@
 #!/bin/bash
 
-userid=$(id -u)
 # userid=$(id -u)
-if [ $userid -ne 0 ]
-then 
-    echo "Error :Run with ROOT access"
-    exit 1
-else
-    echo "success : running with root access"
-fi
+# # userid=$(id -u)
+# if [ $userid -ne 0 ]
+# then 
+#     echo "Error :Run with ROOT access"
+#     exit 1
+# else
+#     echo "success : running with root access"
+# fi
 ## output : success : running with root access
 
 # below program is for installing the 'python3 mysql and nginx'
