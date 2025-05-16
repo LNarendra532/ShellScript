@@ -2,7 +2,7 @@ Special variables in shell
 ============================
 we no need to define the variable, shell will provide to us
 $1
-<br>
+
 if you want all variables passed to script: $@
 number of variables passed: $#
 script name: $0
@@ -14,17 +14,17 @@ To chek previous status: $? we will get in numbers 1to 127 if status fails
                             if success 0 will get
 sleep 10 &
 PID of the last command running in background: $!
-</br>
+
 
 ## conditional operators
------------------------
+
 '''
-<br>
+
 -gt --> greater than
 -lt --> less than
 -eq --> equal
 -ne --> not equal
-</br>
+
 '''
 
 Conditions
