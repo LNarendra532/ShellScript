@@ -16,7 +16,8 @@ sleep 10 &
 PID of the last command running in background: $!
 </br>
 
-##conditional operators
+## conditional operators
+-----------------------
 '''
 <br>
 -gt --> greater than
