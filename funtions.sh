@@ -72,8 +72,8 @@ fi
 # NGINX alreay insatlled ::
 
 
-# RUNwith Debig Mode
-
+# RUNwith Debig Mode  :: sh -x funtions.sh
+ 
 
 # [ ec2-user@ip-172-31-86-244 ~/ShellScript ]$ sh -x funtions.sh
 # + dnf list installed python3
