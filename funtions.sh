@@ -24,9 +24,9 @@ VALIDATE(){
 }
 
 # we are the pkg is laredy insatlled are not,
-dnf list installed python3
+dnf list installed python3  # if it is alreday insatlled gives 0 , else gives not0
 
-if [ $? -ne 0 ]
+if [ $? -ne 0 ]  
 then
     echo "python3 not installed .. going to install.."
     sudo dnf install python3 -y
@@ -35,7 +35,7 @@ else
     echo "python has been Installed alredy"
 fi
 
-dnf list installed mysql
+dnf list installed mysql # if it is alreday insatlled gives 0 , else gives not0
 if [ $? -ne 0 ]
 then
     echo "Mysql not installed .. going to insatll"
@@ -45,7 +45,7 @@ else
     echo "MYsql has been insatlled already"
 fi
 
-dnf list installed nginx
+dnf list installed nginx # if it is alreday insatlled gives 0 , else gives not0
 if [ $? -ne 0 ]
 then
     echo "Nginx not installed .. going to insatall"
