@@ -15,7 +15,7 @@ we no need to define the variable, shell will provide to us
 10. PID of the last command running in background: $!
 ```
 
-## conditional operators
+## Logical operators
 -----
 ```
 1. gt --> greater than  
@@ -24,6 +24,34 @@ a. -gt --> not grater than
 a. -lt -- not less than
 3. eq --> equal
 4. ne --> not equal
+✅ Common Conditions
+📁 File Conditions:
+Condition	Meaning
+-e file	File exists
+-f file	File exists and is a regular file
+-d dir	Directory exists
+-s file	File exists and is not empty
+
+🔢 Integer Comparisons:
+bash
+Copy
+Edit
+if [ "$a" -eq "$b" ]; then   # Equal
+if [ "$a" -ne "$b" ]; then   # Not equal
+if [ "$a" -lt "$b" ]; then   # Less than
+if [ "$a" -le "$b" ]; then   # Less than or equal
+if [ "$a" -gt "$b" ]; then   # Greater than
+if [ "$a" -ge "$b" ]; then   # Greater than or equal
+🔤 String Comparisons:
+bash
+Copy
+Edit
+if [ "$a" = "$b" ]; then     # Strings are equal
+if [ "$a" != "$b" ]; then    # Strings are not equal
+if [ -z "$a" ]; then         # String is empty
+if [ -n "$a" ]; then         # String is not empty
+
+
 ```
 ***
 
