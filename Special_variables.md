@@ -24,15 +24,48 @@ a. -gt --> not grater than
 a. -lt -- not less than
 3. eq --> equal
 4. ne --> not equal
-✅ Common Conditions
-📁 File Conditions:
-Condition	Meaning
--e file	File exists
--f file	File exists and is a regular file
--d dir	Directory exists
--s file	File exists and is not empty
 
-🔢 Integer Comparisons:
+#### Common Conditions
+### File Conditions:
+📁 Common File Test Operators
+Test	Description
+-e file	File exists (file or directory)
+-f file	File exists and is a regular file (not a directory)
+-d file	File exists and is a directory
+-s file	File exists and is not empty
+-r file	File is readable
+-w file	File is writable
+-x file	File is executable
+-L file	File is a symbolic link
+-b file	File is a block special file (e.g., hard disk)
+-c file	File is a character special file (e.g., keyboard)
+
+✅ Examples
+🔸 Check if a file exists:
+bash
+Copy
+Edit
+if [ -e "myfile.txt" ]; then
+    echo "File exists."
+else
+    echo "File does not exist."
+fi
+🔸 Check if a file is non-empty and readable:
+bash
+Copy
+Edit
+if [ -s "log.txt" ] && [ -r "log.txt" ]; then
+    echo "log.txt exists, is readable, and not empty."
+fi
+🔸 Check if a directory exists:
+bash
+Copy
+Edit
+if [ -d "/etc" ]; then
+    echo "/etc is a directory."
+fi
+
+#### Integer Comparisons:
 bash
 Copy
 Edit
@@ -42,9 +75,8 @@ if [ "$a" -lt "$b" ]; then   # Less than
 if [ "$a" -le "$b" ]; then   # Less than or equal
 if [ "$a" -gt "$b" ]; then   # Greater than
 if [ "$a" -ge "$b" ]; then   # Greater than or equal
-🔤 String Comparisons:
-bash
-Copy
+##### String Comparisons:
+
 Edit
 if [ "$a" = "$b" ]; then     # Strings are equal
 if [ "$a" != "$b" ]; then    # Strings are not equal
