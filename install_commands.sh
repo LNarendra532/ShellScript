@@ -5,7 +5,7 @@ USERID=$(id -u)
 
 if [ $USERID -ne 0 ]
 then
-    echo "Not a root User"
+    echo "Not a root User $USERID $USER"
 else
-    echo "your running with $USERID"
+    echo "your running with "
 fi
