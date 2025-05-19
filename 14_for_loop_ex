@@ -3,12 +3,13 @@ movies=("Thanman" "AR" "auto" "seenu" "Ramu")
 
 for i in ${movies[@]}
 do
-    echo $i
+    
     if[ $i -eq "ABC" ]
     then
+        echo "not found ABC"
         exit 1
     else
-        echo "not found"
+        echo $i
     fi
 done
 
