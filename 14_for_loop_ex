@@ -24,7 +24,7 @@ movies=("Thanman" "AR" "auto" "seenu" "Ramu")
 # done
 ################
 
-for i in ((${#movies[@]}))
+for i in (${#movies[@]})
 do 
     echo "$i,${movies[$i]}"
 done
