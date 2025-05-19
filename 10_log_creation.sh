@@ -15,6 +15,7 @@ LOG_FILE="$LOGS_FOLDER/$SCRIPT_NAME.log"
 # 1 - means 2- fail
 # & means  both success and fail
 #" | tee -a $LOG_FILE" this is by pass the output to log file and also display the logs on comandline interpreter.
+# -e is enable - must need to give before applying colors
 
 mkdir -p $LOGS_FOLDER   # -p means if dir is alredy there it will give not throw error
 echo "Script started executing at: $(date)" | tee -a $LOG_FILE
