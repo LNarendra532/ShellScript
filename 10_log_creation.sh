@@ -14,7 +14,7 @@ LOG_FILE="$LOGS_FOLDER/$SCRIPT_NAME.log"
 ## &>> $LOG_FILE   THis is - Just append the logs to Logfile
 # 1 - means 2- fail
 # & means  both success and fail
-#" | tee -a $LOG_FILE" this is by pass the output to log file and also display the logs on comandline interpreter.
+#" | tee -a $LOG_FILE" this is bypass the output to log file and also display the logs on comandline interpreter.
 # -e is enable - must need to give before applying colors
 
 mkdir -p $LOGS_FOLDER   # -p means if dir is alredy there it will give not throw error
