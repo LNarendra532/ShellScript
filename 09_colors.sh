@@ -4,6 +4,8 @@ USERID=$(id -u)
 R="\e[31m"
 G="\e[32m"
 Y="\e[33m"
+M="\e[35m"
+C="\e[36"
 N="\e[0m"
 
 if [ $USERID -ne 0 ]
@@ -28,29 +30,29 @@ VALIDATE(){
 dnf list installed mysql
 if [ $? -ne 0 ]
 then
-    echo "MySQL is not installed... going to install it"
+    echo "$C MySQL is not installed... going to install it $N"
     dnf install mysql -y
     VALIDATE $? "MySQL"
 else
-    echo -e "Nothing to do MySQL... $Y already installed $N"
+    echo -e " Nothing to do MySQL... $M already installed $N"
 fi
 
 dnf list installed python3
 if [ $? -ne 0 ]
 then
-    echo "python3 is not installed... going to install it"
+    echo "$C python3 is not installed... going to install it $N"
     dnf install python3 -y
     VALIDATE $? "python3"
 else
-    echo -e "Nothing to do python... $Y already installed $N"
+    echo -e "Nothing to do python... $M already installed $N"
 fi
 
 dnf list installed nginx
 if [ $? -ne 0 ]
 then
-    echo "nginx is not installed... going to install it"
+    echo "$C nginx is not installed... going to install it $N"
     dnf install nginx -y
     VALIDATE $? "nginx"
 else
-    echo -e "Nothing to do nginx... $Y already installed $N"
+    echo -e "Nothing to do nginx... $M already installed $N"
 fi
