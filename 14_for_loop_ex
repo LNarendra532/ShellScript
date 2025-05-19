@@ -6,7 +6,7 @@ for i in ${movies[@]}
 do
     if [ $i == "auto" ]
     then
-        echo "not found ABC"
+        echo "Found and auto"
         exit 1
     else
         echo $i
@@ -17,5 +17,10 @@ done
 # do
 #    echo $i
 # done
+for i in ${#movies[$@]}
+do
+    echo "Index , $i, movie is ${movies[$i]}"
+done
+
 
 
