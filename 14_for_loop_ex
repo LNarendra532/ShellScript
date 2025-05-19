@@ -18,16 +18,13 @@ movies=("Thanman" "AR" "auto" "seenu" "Ramu")
 #    echo $i
 # done
 #############
-# for ((i = 0; i < ${#movies[@]}; i++))
-# do
-#     echo "Index , $i, movie is ${movies[$i]}"
-# done
-################
-
-for i in (${#movies[@]})
-do 
-    echo "$i,${movies[$i]}"
+for ((i = 0; i < ${#movies[@]}; i++))
+do
+    echo "Index , $i, movie is ${movies[$i]}"
 done
+###############
+
+
 
 
 
