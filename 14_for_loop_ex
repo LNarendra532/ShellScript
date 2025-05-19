@@ -17,7 +17,7 @@ done
 # do
 #    echo $i
 # done
-for i in ${#movies[$@]}
+for i in ${#movies[@]}
 do
     echo "Index , $i, movie is ${movies[$i]}"
 done
