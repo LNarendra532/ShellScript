@@ -13,10 +13,10 @@ movies=("Thanman" "AR" "auto" "seenu" "Ramu")
 #     fi
 # done
 
-# for i in ${movies[@]}
-# do
-#    echo $i
-# done
+for i in ${movies[@]}
+do
+   echo $i
+done
 #############
 for ((i = 0; i < ${#movies[@]}; i++))
 do
